@@ -9,11 +9,6 @@
 --
 -----------------------------------------------------------------------------------------
 
-local aBaseOfTrapezoid
-local bBaseOfTrapezoid
-local heightOfTrapezoid
-local areaOfTrapezoid
-
 local enterA = display.newText( "Enter A:", 300, 200, native.systemFont, 128)
 enterA.id = "Enter A"
 local aBaseTextField = native.newTextField( 300, 400, 500, 128)
@@ -38,6 +33,11 @@ local answer = display.newText( "The Area is: ", display.contentCenterX, display
 
 local function calculateArea( event )
 	-- To calculate the area
+	local aBaseOfTrapezoid
+	local bBaseOfTrapezoid
+	local heightOfTrapezoid
+	local areaOfTrapezoid
+	
 	aBaseOfTrapezoid = aBaseTextField.text 
 	bBaseOfTrapezoid = bBaseTextField.text
 	heightOfTrapezoid = heightTextField.text
